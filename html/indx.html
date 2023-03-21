@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/indx.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="../images/341406.png" alt="">
+      <h1>Pizzino</h1>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="#pizza">Pizza</a></li>
+        <li><a href="#siders">Siders</a></li>
+        <li><a href="#beverages">Beverages</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="cont">
+    <div class="bl"></div>
+    <div class="wp">
+      <div class="name">
+        <div class="namh">
+          <h1 class="bs b1">P</h1>
+          <h1 class="bs b2">I</h1>
+          <h1 class="bs b3">Z</h1>
+          <h1 class="bs b4">Z</h1>
+          <h1 class="bs b5">I</h1>
+          <h1 class="bs b6">N</h1>
+          <h1 class="bs b7">O</h1>
+        </div>
+        <p>your one time stop for all pizza cravings</p>
+      </div>
+      <img src="../images/pizza-386717_960_720.jpg" alt="">
+    </div>
+  </div>
+  <div class="wrapper">
+  <div class="main">
+  <div class="pizza">
+    <section id="pizza">
+    <div class="pnam">
+      <h1>PIZZAS</h1>
+    </div>
+    <div class="veg">
+      <div class="vegnam"><h2>VEG</h2></div>
+      <div class="card-group m-2">
+        <div class="card m-2">
+          <img src="../images/v1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Margherita</h2>
+            </h5>
+            <h4>Price &#8377<span id="v1p">99</span></h4>
+            <form>
+              <input onclick="v1sm()" id="v1n1" type="radio" value="99" name="v1n">
+              <label  for="v1n1">small</label>
+              <input onclick="v1med()" id="v1n2" type="radio" value="199" name="v1n">
+              <label for="v1n2">medium</label>
+              <input onclick="v1lar()" id="v1n3" type="radio" value="395" name="v1n">
+              <label for="v1n3">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v1dec()">-</button>
+              <h2 id="v1c">0</h2>
+              <button onclick="v1inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick=" addv1() ">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/v2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Cheese and Corn</h2>
+            </h5>
+            <h4>Price &#8377<span id="v2p">165</span></h4>
+            <form>
+              <input onclick="v2sm()" type="radio"  value="165" id="v2n1" name="v2n">
+              <label for="small">small</label>
+              <input onclick="v2med()" type="radio" value="305" id="v2n2" name="v2n">
+              <label for="medium">medium</label>
+              <input onclick="v2lar()" type="radio" value="495" id="v2n3" name="v2n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v2dec()">-</button>
+              <h2 id="v2c">0</h2>
+              <button onclick="v2inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv2()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/v3.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Cheese and Tomato</h2>
+            </h5>
+            <h4>Price &#8377<span id="v3p">165</span></h4>
+            <form>
+              <input onclick="v3sm()" type="radio"  value="165" id="v3n1" name="v3n">
+              <label for="small">small</label>
+              <input onclick="v3med()" type="radio" value="305" id="v3n2" name="v3n">
+              <label for="medium">medium</label>
+              <input onclick="v3lar()" type="radio" value="495" id="v3n3" name="v3n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v3dec()">-</button>
+              <h2 id="v3c">0</h2>
+              <button onclick="v3inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv3()">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-group m-2">
+        <div class="card m-2">
+          <img src="../images/v4.webp" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Fresh veggie</h2>
+            </h5>
+            <h4>Price &#8377<span id="v4p">185</span></h4>
+            <form>
+              <input onclick="v4sm()" type="radio"  value="185" id="v4n1" name="v4n">
+              <label for="small">small</label>
+              <input onclick="v4med()" type="radio" value="335" id="v4n2" name="v4n">
+              <label for="medium">medium</label>
+              <input onclick="v4lar()" type="radio" value="595" id="v4n3" name="v4n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v4dec()">-</button>
+              <h2 id="v4c">0</h2>
+              <button onclick="v4inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv4()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/v5n.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Farm house</h2>
+            </h5>
+            <h4>Price &#8377 <span id="v5p">215</span></h4>
+            <form>
+              <input onclick="v5sm()" type="radio"  value="215" id="v5n1" name="v5n">
+              <label for="small">small</label>
+              <input onclick="v5med()" type="radio" value="395" id="v5n2" name="v5n">
+              <label for="medium">medium</label>
+              <input onclick="v5lar()" type="radio" value="595" id="v5n3" name="v5n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v5dec()">-</button>
+              <h2 id="v5c">0</h2>
+              <button onclick="v5inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv5()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/v6.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Mexican green wave</h2>
+            </h5>
+            <h4>Price &#8377<span id="v6p">215</span></h4>
+            <form>
+              <input onclick="v6sm()" type="radio"  value="215" id="v6n1" name="v6n">
+              <label for="small">small</label>
+              <input onclick="v6med()" type="radio" value="395" id="v6n2" name="v6n">
+              <label for="medium">medium</label>
+              <input onclick="v6lar()" type="radio" value="595" id="v6n3" name="v6n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v6dec()">-</button>
+              <h2 id="v6c">0</h2>
+              <button onclick="v6inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv6()">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-group m-2">
+        <div class="card m-2">
+          <img src="../images/v7n.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Peppy Paneer</h2>
+            </h5>
+            <h4>Price &#8377<span id="v7p">215</span></h4>
+            <form>
+              <input onclick="v7sm()" type="radio"  value="215" id="v7n1" name="v7n">
+              <label for="small">small</label>
+              <input onclick="v7med()" type="radio" value="395" id="v7n2" name="v7n">
+              <label for="medium">medium</label>
+              <input onclick="v7lar()" type="radio" value="595" id="v7n3" name="v7n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v7dec()">-</button>
+              <h2 id="v7c">0</h2>
+              <button onclick="v7inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv7()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/v8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Deluxe veg pizza</h2>
+            </h5>
+            <h4>Price &#8377 <span id="v8p">235</span></h4>
+            <form>
+              <input onclick="v8sm()" type="radio"  value="235" id="v8n1" name="v8n">
+              <label for="small">small</label>
+              <input onclick="v8med()" type="radio" value="450" id="v8n2" name="v8n">
+              <label for="medium">medium</label>
+              <input onclick="v8lar()" type="radio" value="695" id="v8n3" name="v8n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v8dec()">-</button>
+              <h2 id="v8c">0</h2>
+              <button onclick="v8inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv8()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/v9.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Kadhai paneer</h2>
+            </h5>
+            <h4>Price &#8377<span id="v9p">235</span></h4>
+            <form>
+              <input onclick="v9sm()" type="radio"  value="235" id="v9n1" name="v9n">
+              <label for="small">small</label>
+              <input onclick="v9med()" type="radio" value="450" id="v9n2" name="v9n">
+              <label for="medium">medium</label>
+              <input onclick="v9lar()" type="radio" value="695" id="v9n3" name="v9n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="v9dec()">-</button>
+              <h2 id="v9c">0</h2>
+              <button onclick="v9inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addv9()">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nveg">
+      <div class="nvegnam"><h2>NON VEG</h2></div>
+      <div class="card-group m-2">
+        <div class="card m-2">
+          <img src="../images/nv1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Chicken Sausage</h2>
+            </h5>
+            <h4>Price &#8377<span id="nv1p">165</span></h4>
+            <form>
+              <input onclick="nv1sm()" type="radio"  value="165" id="nv1n1" name="nv1n">
+              <label for="small">small</label>
+              <input onclick="nv1med()" type="radio" value="305" id="nv1n2" name="nv1n">
+              <label for="medium">medium</label>
+              <input onclick="nv1lar()" type="radio" value="495" id="nv1n3" name="nv1n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="nv1dec()">-</button>
+              <h2 id="nv1c">0</h2>
+              <button onclick="nv1inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addnv1()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/nv2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Pepper barbeque chicken</h2>
+            </h5>
+            <h4>Price &#8377<span id="nv2p">185</span></h4>
+            <form>
+              <input onclick="nv2sm()" type="radio"  value="185" id="nv2n1" name="nv2n">
+              <label for="small">small</label>
+              <input onclick="nv2med()" type="radio" value="335" id="nv2n2" name="nv2n">
+              <label for="medium">medium</label>
+              <input onclick="nv2lar()" type="radio" value="535" id="nv2n3" name="nv2n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="nv2dec()">-</button>
+              <h2 id="nv2c">0</h2>
+              <button onclick="nv2inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addnv2()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/nv3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Chicken Fiesta</h2>
+            </h5>
+            <h4>Price &#8377<span id="nv3p">235</span></h4>
+            <form>
+              <input onclick="nv3sm()" type="radio"  value="235" id="nv3n1" name="nv3n">
+              <label for="small">small</label>
+              <input onclick="nv3med()" type="radio" value="450" id="nv3n2" name="nv3n">
+              <label for="medium">medium</label>
+              <input onclick="nv3lar()" type="radio" value="695" id="nv3n3" name="nv3n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="nv3dec()">-</button>
+              <h2 id="nv3c">0</h2>
+              <button onclick="nv3inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addnv3()">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-group m-2">
+        <div class="card m-2">
+          <img src="../images/nv4n.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Chicken Dominator</h2>
+            </h5>
+            <h4>Price &#8377<span id="nv4p">305</span></h4>
+            <form>
+              <input onclick="nv4sm()" type="radio"  value="305" id="nv4n1" name="nv4n">
+              <label for="small">small</label>
+              <input onclick="nv4med()" type="radio" value="570" id="nv4n2" name="nv4n">
+              <label for="medium">medium</label>
+              <input onclick="nv4lar()" type="radio" value="835" id="nv4n3" name="nv4n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="nv4dec()">-</button>
+              <h2 id="nv4c">0</h2>
+              <button onclick="nv4inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addnv4()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/nv5.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>Non veg Supreme</h2>
+            </h5>
+            <h4>Price &#8377<span id="nv5p">305</span></h4>
+            <form>
+              <input onclick="nv5sm()" type="radio"  value="305" id="nv5n1" name="nv5n">
+              <label for="small">small</label>
+              <input onclick="nv5med()" type="radio" value="570" id="nv5n2" name="nv5n">
+              <label for="medium">medium</label>
+              <input onclick="nv5lar()" type="radio" value="835" id="nv5n3" name="nv5n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="nv5dec()">-</button>
+              <h2 id="nv5c">0</h2>
+              <button onclick="nv5inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addnv5()">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../images/nv6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              <h2>BBQ pork</h2>
+            </h5>
+            <h4>Price &#8377<span id="nv6p">360</span></h4>
+            <form>
+              <input onclick="nv6sm()" type="radio"  value="360" id="nv6n1" name="nv6n">
+              <label for="small">small</label>
+              <input onclick="nv6med()" type="radio" value="600" id="nv6n2" name="nv6n">
+              <label for="medium">medium</label>
+              <input onclick="nv6lar()" type="radio" value="900" id="nv6n3" name="nv6n">
+              <label for="large">large</label>
+            </form>
+            <br>
+            <div class="quant">
+              <button onclick="nv6dec()">-</button>
+              <h2 id="nv6c">0</h2>
+              <button onclick="nv6inc()">+</button>
+            </div>
+            <div class="sub">
+              <button onclick="addnv6()">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="siders">
+    <section id="siders">
+    <div class="snam">
+      <h1>SIDERS</h1>
+    </div>
+    <div class="card-group m-2">
+      <div class="card m-2">
+        <img src="../images/s1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Garlic bread</h2>
+          </h5>
+          <h4>Price  &#8377<span id="s1p">60</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="s1dec()">-</button>
+            <h2 id="s1c">0</h2>
+            <button onclick="s1inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="adds1()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="../images/s2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Cheese garlic bread</h2>
+          </h5>
+          <h4>Price &#8377<span id="s2p">80</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="s2dec()">-</button>
+            <h2 id="s2c">0</h2>
+            <button onclick="s2inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="adds2()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="../images/s3.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Keema garlic bread</h2>
+          </h5>
+          <h4>Price &#8377<span id="s3p">100</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="s3dec()">-</button>
+            <h2 id="s3c">0</h2>
+            <button onclick="s3inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="adds3()">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-group m-2">
+      <div class="card m-2">
+        <img src="../images/s4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Cheese french fries</h2>
+          </h5>
+          <h4>Price &#8377<span id="s4p">100</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="s4dec()">-</button>
+            <h2 id="s4c">0</h2>
+            <button onclick="s4inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="adds4()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="../images/s5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Choco lava cake</h2>
+          </h5>
+          <h4>Price &#8377<span id="s5p">100</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="s5dec()">-</button>
+            <h2 id="s5c">0</h2>
+            <button onclick="s5inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="adds5()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="../images/s6.jfif" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Chicken nuggets</h2>
+          </h5>
+          <h4>Price &#8377<span id="s6p">120</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="s6dec()">-</button>
+            <h2 id="s6c">0</h2>
+            <button onclick="s6inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="adds6()">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="beverages">
+    <section id="beverages">
+    <div class="bnam">
+      <h1>BEVERAGES</h1>
+    </div>
+    <div class="card-group m-2">
+      <div class="card m-2">
+        <img src="../images/b1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Coke</h2>
+          </h5>
+          <h4>Price &#8377<span id="b1p">40</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="b1dec()">-</button>
+            <h2 id="b1c">0</h2>
+            <button onclick="b1inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="addb1()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="../images/b2.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Sprite</h2>
+          </h5>
+          <h4>Price &#8377<span id="b2p">40</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="b2dec()">-</button>
+            <h2 id="b2c">0</h2>
+            <button onclick="b2inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="addb2()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="card m-2">
+        <img src="../images/b3.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <h2>Lemonade</h2>
+          </h5>
+          <h4>Price &#8377<span id="b3p">50</span></h4>
+          <br>
+          <div class="quant">
+            <button onclick="b3dec()">-</button>
+            <h2 id="b3c">0</h2>
+            <button onclick="b3inc()">+</button>
+          </div>
+          <div class="sub">
+            <button onclick="addb3()">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+</div>
+  <div class="orders">
+    <div class="onam">
+      <h1>ORDERS</h1>
+    </div>
+    <div id="listblc" class="listblc"><h1>YOUR CART IS EMPTY</h1></div>
+    <div id="list" class="list">
+      <div class="orprice">
+        <div class="l1" id="l1">
+          <h2 id="op1"></h2>
+          <h2 id="or1"></h2>
+        </div>
+        <div class="l2" id="l2">
+          <h2 id="op2"></h2>
+          <h2 id="or2"></h2>
+        </div>
+        <div class="l3" id="l3">
+          <h2 id="op3"></h2>
+          <h2 id="or3"></h2>
+        </div>
+          <div class="l4" id="l4">
+          <h2 id="op4"></h2>
+          <h2 id="or4"></h2>
+        </div>     
+           <div class="l5" id="l5">
+          <h2 id="op5"></h2>
+          <h2 id="or5"></h2>
+        </div>
+        <div class="l6" id="l6">
+          <h2 id="op6"></h2>
+          <h2 id="or6"></h2>
+        </div>
+        <div class="l7" id="l7">
+          <h2 id="op7"></h2>
+          <h2 id="or7"></h2>
+        </div>
+        <div class="l8" id="l8">
+          <h2 id="op8"></h2>
+          <h2 id="or8"></h2>
+        </div>
+        <div class="l9" id="l9">
+          <h2 id="op9"></h2>
+          <h2 id="or9"></h2>
+        </div>
+        <div class="ln1" id="ln1">
+          <h2 id="opn1"></h2>
+          <h2 id="orn1"></h2>
+        </div>
+        <div class="ln2" id="ln2">
+          <h2 id="opn2"></h2>
+          <h2 id="orn2"></h2>
+        </div>
+        <div class="ln3" id="ln3">
+          <h2 id="opn3"></h2>
+          <h2 id="orn3"></h2>
+        </div>
+        <div class="ln4" id="ln4">
+          <h2 id="opn4"></h2>
+          <h2 id="orn4"></h2>
+        </div>
+        <div class="ln5" id="ln5">
+          <h2 id="opn5"></h2>
+          <h2 id="orn5"></h2>
+        </div>
+        <div class="ln6" id="ln6">
+          <h2 id="opn6"></h2>
+          <h2 id="orn6"></h2>
+        </div>
+        <div class="ls1" id="ls1">
+          <h2 id="ops1"></h2>
+          <h2 id="ors1"></h2>
+        </div>
+        <div class="ls2" id="ls2">
+          <h2 id="ops2"></h2>
+          <h2 id="ors2"></h2>
+        </div>
+        <div class="ls3" id="ls3">
+          <h2 id="ops3"></h2>
+          <h2 id="ors3"></h2>
+        </div>
+        <div class="ls4" id="ls4">
+          <h2 id="ops4"></h2>
+          <h2 id="ors4"></h2>
+        </div>
+        <div class="ls5" id="ls5">
+          <h2 id="ops5"></h2>
+          <h2 id="ors5"></h2>
+        </div>
+        <div class="ls6" id="ls6">
+          <h2 id="ops6"></h2>
+          <h2 id="ors6"></h2>
+        </div>
+        <div class="lb1" id="lb1">
+          <h2 id="opb1"></h2>
+          <h2 id="orb1"></h2>
+        </div>
+        <div class="lb2" id="lb2">
+          <h2 id="opb2"></h2>
+          <h2 id="orb2"></h2>
+        </div>
+        <div class="lb3" id="lb3">
+          <h2 id="opb3"></h2>
+          <h2 id="orb3"></h2>
+        </div>
+<hr>
+        <div class="total" id="total">
+          <h2 id="totalp">TOTAL</h2>
+          <h2 id="totalr"></h2>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="../javascript/indx.js"></script>
+
+
+</body>
+<footer>
+  <div class="foot">
+    <div class="left">
+        <h2>PIZZINO</h2>
+    </div>
+    <div class="midleft">
+        <ul>
+            <li>
+                <p>Know Us</p>
+            </li>
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">locate us</a></li>
+            <li><a href="#">blog</a></li>
+        </ul>
+    </div>
+    <div class="midd">
+        <ul>
+            <li>
+                <p>Need help</p>
+            </li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Cancellation and refund</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Sitemap</a></li>
+        </ul>
+    </div>
+    <div class="midright">
+        <ul>
+            <li>
+                <p>More info</p>
+            </li>
+            <li><a href="#">Corporate cakes</a></li>
+            <li><a href="#">Coupan and offers</a></li>
+            <li><a href="#">Franchise</a></li>
+            <li><a href="#">Download app</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <p>Find us</p>
+        <ul>
+            <li><a href="#"><img src="../images/twitter-128.png" alt=""></a></li>
+            <li><a href="#"><img src="../images/fb1.png" alt=""></a></li>
+            <li><a href="#"><img src="../images/ig.png" alt=""></a></li>  
+        </ul>
+        <h3>Subscribe to our newsletter</h3>
+        <input #email name="email" type="email" placeholder="email"><br>
+        <button name="email">Subscribe</button>
+    </div>
+</div>
+<h4>&#169;Cakeshop</h4>
+</footer>
+</html>

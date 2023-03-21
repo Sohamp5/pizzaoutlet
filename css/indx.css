@@ -1,0 +1,855 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0px;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+}
+.main{
+    width: 70%;
+}
+
+.logo h1{
+    margin: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav img {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    margin-left: 100px;
+    display: flex;
+}
+
+nav {
+    color: #d00000;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 5;
+    display: flex;
+    background-color: #e4b130;
+    border-bottom: 2px solid #d00000;
+}
+
+.navbar {
+    width: 100%;
+
+}
+
+.navbar ul {
+    margin-top: 10px;
+    margin-left: 40%;
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    margin-left: 5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d00000;
+}
+
+.navbar a:hover {
+    color: black;
+
+}
+
+/* ===================================/ */
+.bl {
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.wp img {
+    z-index: -5;
+    width: 100%;
+    height: 100vh;
+}
+
+.name {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    margin-top: -200px;
+    margin-left: 20%;
+    position: absolute;
+    z-index: 0;
+}
+
+.namh {
+    color: #d00000;
+    display: flex;
+}
+
+.namh h1 {
+    font-size: 200px;
+}
+
+.bs {
+    z-index: 5;
+    transform: translateY(0vh) rotateZ(0deg);
+    margin: 10px;
+    animation: log1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.b1{animation-delay: 1.2s;}
+.b2{animation-delay: 1s;}
+.b3{animation-delay: 0.8s;}
+.b4{animation-delay: 0.6s;}
+.b5{animation-delay: 0.4s;}
+.b6{animation-delay: 0.2s;}
+.b7{animation-delay: 0s;}
+@keyframes log1{
+    0%{
+        transform: translateY(0vh) rotateZ(0deg);
+    }
+    5%{
+        transform: translateY(50vh) rotateZ(360deg);
+    }
+    60%{
+        transform: translateY(50vh) rotateZ(360deg);
+    }
+    65%{
+        transform: translateY(0vh) rotateZ(0deg);
+    }
+    100%{
+        transform: translateY(0vh) rotateZ(0deg);
+    }
+}
+.name p {
+    animation-delay: 1.2s;
+    opacity: 0;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: plog;
+    margin-left: 17%;
+    font-size: 40px;
+    color: white;
+    margin-top: 50vh;
+}
+@keyframes plog{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    65%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* ========================================== */
+.pizza{
+    background-color: #e4b130;
+}
+.pnam{
+    padding: 50px 0px;
+    text-align: center;
+}
+.pnam h1{
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    color: #d00000;
+}
+.quant{
+    display: flex;
+}
+.quant h2{
+    text-align: center;
+    width: 30px;
+    font-size: 30px;
+    border: 2px solid black;
+}
+.quant button{
+    border-radius: 2px 0px 0px 2px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #e4b130;
+    background-color: #d00000;
+    height: 39px;
+    width: 30px;
+}
+.sub button{
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d00000;
+    color: #e4b130;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+.card img{
+    /* width: 500px; */
+    height: 200px;
+
+}
+.vegnam{
+    /* margin-top: 50px; */
+    /* text-align: center; */
+    padding-left: 50px;
+}
+.vegnam h2{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    color: #d00000;
+}
+.nvegnam{
+    margin-top: 50px;
+    /* text-align: center; */
+    padding-left: 50px;
+}
+.nvegnam h2{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    color: #d00000;
+}
+
+
+
+
+/* ================================= */
+.siders{
+    background-color: #e4b130;
+}
+.snam{
+    padding: 50px 0px;
+    text-align: center;
+}
+.snam h1{
+    
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    color: #d00000;
+}
+
+/* =================================================== */
+.beverages{
+    background-color: #e4b130;
+}
+.bnam{
+    padding: 50px 0px;
+    text-align: center;
+}
+.bnam h1{
+    
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    color: #d00000;
+}
+
+
+/* =========================================== */
+.orders{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 30%;
+    background-color: #e4b130;
+
+}
+.listblc{
+    display: block;
+    border-radius: 10px;
+    margin: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 0px;
+    text-align: center;
+}
+.listblc h1{
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    color: #d00000;
+}
+.list{
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px 10px;
+    border-radius: 10px;
+    /* display: flex; */
+    display: none;
+}
+.list h2{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.list button{
+    /* bottom: 0; */
+    height: 30px;
+    width: 30px;
+    /* font-size: 50px; */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 46%;
+    /* position: absolute; */
+}
+.onam{
+    margin-top: 100px;
+    /* padding-top: 50px; */
+    text-align: center;
+}
+.onam h1{
+    font-size: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Kaushan Script', cursive;
+    color: #d00000;
+}
+
+
+/* ===================================== */
+.l1{
+    display: none;
+}
+#or1{
+    position: absolute;
+    right: 20px;
+}.l2{
+    display: none;
+}
+#or2{
+    position: absolute;
+    right: 20px;
+}.l3{
+    display: none;
+}
+#or3{
+    position: absolute;
+    right: 20px;
+}.l4{
+    display: none;
+}
+#or4{
+    position: absolute;
+    right: 20px;
+}
+.l5{
+    display: none;
+}
+#or5{
+    position: absolute;
+    right: 20px;
+}
+.l6{
+    display: none;
+}
+#or6{
+    position: absolute;
+    right: 20px;
+}
+.l7{
+    display: none;
+}
+#or7{
+    position: absolute;
+    right: 20px;
+}
+.l8{
+    display: none;
+}
+#or8{
+    position: absolute;
+    right: 20px;
+}
+.l9{
+    display: none;
+}
+#or9{
+    position: absolute;
+    right: 20px;
+}
+
+
+.ln1{
+    display: none;
+}
+#orn1{
+    position: absolute;
+    right: 20px;
+}.ln2{
+    display: none;
+}
+#orn2{
+    position: absolute;
+    right: 20px;
+}.ln3{
+    display: none;
+}
+#orn3{
+    position: absolute;
+    right: 20px;
+}.ln4{
+    display: none;
+}
+#orn4{
+    position: absolute;
+    right: 20px;
+}.ln5{
+    display: none;
+}
+#orn5{
+    position: absolute;
+    right: 20px;
+}.ln6{
+    display: none;
+}
+#orn6{
+    position: absolute;
+    right: 20px;
+}
+
+.ls1{
+    display: none;
+}
+#ors1{
+    position: absolute;
+    right: 20px;
+}.ls2{
+    display: none;
+}
+#ors2{
+    position: absolute;
+    right: 20px;
+}.ls3{
+    display: none;
+}
+#ors3{
+    position: absolute;
+    right: 20px;
+}.ls4{
+    display: none;
+}
+#ors4{
+    position: absolute;
+    right: 20px;
+}.ls5{
+    display: none;
+}
+#ors5{
+    position: absolute;
+    right: 20px;
+}.ls6{
+    display: none;
+}
+#ors6{
+    position: absolute;
+    right: 20px;
+}
+
+.lb1{
+    display: none;
+}
+#orb1{
+    position: absolute;
+    right: 20px;
+}.lb2{
+    display: none;
+}
+#orb2{
+    position: absolute;
+    right: 20px;
+}.lb3{
+    display: none;
+}
+#orb3{
+    position: absolute;
+    right: 20px;
+}
+
+.total{
+    display: none;
+}
+#totalr{
+    position: absolute;
+    right: 20px;
+}
+
+/* ===================footer=== */
+.foot{
+    background-color: #e4b130;
+    justify-content: space-evenly;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left {
+    margin-top: 100px;
+}
+.left h2{
+    text-shadow: 0 0 50px #d00000;
+    color: #d00000;
+}
+.right p{
+    color: #d00000;
+    font-size: 20px;
+}
+.foot a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.foot ul{
+    list-style-type: none;
+}
+.right{
+    margin-top: 30px;
+    text-align: center;
+}
+.right img{
+    width: 35px;
+    height: 35px;
+}
+.right ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.foot li{
+    font-size: 20px;
+    margin: 25px;
+}
+.foot h4{
+    text-align: center;
+    color: #d00000;
+}
+footer{
+    background-color: #e4b130;
+}
+footer h4{
+    
+    text-align: center;
+    color:#d00000;
+}
+.foot h3{
+    color: orangered;
+}
+.foot input{
+    border: 2px solid #d00000;
+    border-radius: 10px;
+    margin: 20px;
+    width: 250px;
+    height: 50px;
+}
+.foot button{
+    background-color: #d00000;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+
+}
+
+
+
+/* ==========media================== */
+@media (max-width:1440px){
+    .name{
+        margin-left: 15%;
+    }
+}
+
+@media (max-width:1230px){
+    .name{
+        margin-left: 20%;
+    }
+    .name h1{
+        font-size: 150px;
+    }
+    .name p{
+        font-size: 30px;
+    }
+    .navbar ul {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width:1040px){
+    .name h1{
+        font-size: 125px;
+    }
+    
+    .foot{
+        padding: 100px 0px;
+    }
+}
+@media (max-width:950px){
+    .name{
+        margin-left: 15%;
+    }
+    .wrapper{
+        display: block;
+    }
+    .main{
+        width: 100%;
+    }
+    .orders{
+        width: 100%;
+        height: auto;
+    }
+    .onam{
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+    nav {
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        display: block;
+    }
+    
+    .logo {
+        margin-left: 40%;
+    }
+    .wrapper h1{
+        font-size: 30px;
+    }
+    .wrapper h2{
+        font-size: 25px;
+    }
+    .wrapper label{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:850px){
+    .name h1{
+        font-size: 100px;
+    }
+    .name p{
+        font-size: 25px;
+    }
+    .navbar ul {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:800px){
+    .name h1{
+        font-size: 80px;
+    }
+    .name p{
+        font-size: 20px;
+    }
+    .navbar ul {
+        margin-left: 5%;
+    }
+    .logo {
+        margin-left: 35%;
+    }
+}
+
+@media (max-width:680px){
+    /* .name h1{
+        font-size: 80px;
+    }
+    .name p{
+        font-size: 20px;
+    } */
+    .navbar a {
+        font-size: 25px;
+    }
+    .logo h1{
+        font-size: 30px;
+    }
+    .navbar ul {
+        margin-left: 0%;
+    }
+    nav {
+        height: 125px;
+    }
+    nav img {
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width:570px){
+    .name h1{
+        font-size: 60px;
+    }
+    .name p{
+        font-size: 18px;
+    }
+    .navbar a {
+        font-size: 20px;
+    }
+    .navbar ul li{
+        margin-left: 4rem;
+    }
+    .logo h1{
+        font-size: 25px;
+    }
+    nav {
+        height: 125px;
+    }
+    nav img {
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .wrapper h1{
+        font-size: 20px;
+    }
+    .wrapper h2{
+        font-size: 15px;
+    }
+    .wrapper label{
+        font-size: 12px;
+    }
+    .wrapper input{
+        font-size: 10px;
+    }
+    .quant button{
+        font-size: 15px;
+        height: 25px;
+        width: 20px;
+    }
+    .sub button{
+        font-size: 10px;
+        width: 40px;
+        height: 20px;
+    }
+}
+
+@media (max-width:430px){
+    .name h1{
+        font-size: 45px;
+    }
+    .name p{
+        margin-top: 70vh;
+        font-size: 15px;
+    }
+    @keyframes log1{
+        0%{
+            transform: translateY(0vh) rotateZ(0deg);
+        }
+        5%{
+            transform: translateY(70vh) rotateZ(360deg);
+        }
+        60%{
+            transform: translateY(70vh) rotateZ(360deg);
+        }
+        65%{
+            transform: translateY(0vh) rotateZ(0deg);
+        }
+        100%{
+            transform: translateY(0vh) rotateZ(0deg);
+        }
+    }
+    .navbar ul li{
+        margin-left: 3rem;
+    }
+    .navbar ul{
+        margin-top: 0px;
+    }
+    nav {
+        height: 75px;
+    }
+    nav img {
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    } 
+    .logo h1{
+        font-size: 20px;
+    }
+    .navbar a {
+        font-size: 15px;
+    }
+    .logo{
+        margin-bottom: -20px;
+    }
+}
+
+@media (max-width:400px){
+    .name h1{
+        margin: 7px;
+        font-size: 38px;
+    }
+    .name p{
+        margin-left: 40px;
+        margin-top: 70vh;
+        font-size: 12px;
+    }
+}
+@media (max-width:320px){
+    .navbar ul li{
+        margin-left: 2rem;
+    }
+    .name h1{
+        margin: 5px;
+        font-size: 38px;
+    }
+    .name p{
+        margin-left: 30px;
+        margin-top: 70vh;
+        font-size: 10px;
+    }
+    .foot input{
+        border: 2px solid #d00000;
+        border-radius: 10px;
+        margin: 20px;
+        width: 250px;
+        height: 50px;
+    }
+    .foot button{
+        background-color: #d00000;
+        color: white;
+        border-radius: 10px;
+        width: 150px;
+        height: 50px;
+    
+    }
+    .right h3{
+        font-size: 18px;
+    }
+    .left{
+        display: none;
+    }
+}
