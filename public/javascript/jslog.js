@@ -14,7 +14,7 @@ function log(){
     p=document.getElementById("ps").value
     for(let u of ar){
         if(e==u['usn'] && p==u['pwd']){
-            location.href='../html/indx.html'
+            location.href='https://github.com/Sohamp5/pizzaoutlet/blob/fb320429f4d401106db7aa3665c9bd32ed87c0c2/public/html/indx.html'
             alert("login successful")
         }
         else{
